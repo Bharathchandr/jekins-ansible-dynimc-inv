@@ -3,11 +3,11 @@ provider "aws"{
 region = "ap-south-1"
 }
 
-resource "aws_instance" "AWSInstance" {
+resource "aws_instance" "AWSServer" {
      count ="3"
-     ami = "ami-06791f9213cbb608b"
+     ami = "ami-02e94b011299ef128"
 	 instance_type = "t2.micro"
-	 key_name = "devopsmss"
+	 key_name = "bharathmediumtechnologies"
 	 security_groups = ["launch-wizard-2"]
 	 tags = {
 	 Name = "tomcatserver"
