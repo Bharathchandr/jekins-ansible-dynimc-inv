@@ -10,7 +10,7 @@ resource "aws_instance" "AWSServer" {
 	 key_name = "bharathmediumtechnologies"
 	 security_groups = ["launch-wizard-2"]
 	 tags = {
-	 Name = "tomcatserver"
+	 Name = "tomcatservers"
 	 }
 }
 
